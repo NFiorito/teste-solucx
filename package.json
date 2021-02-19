@@ -1,0 +1,27 @@
+{
+  "name": "teste-solucx",
+  "version": "1.0.0",
+  "description": "Desafio técnico | Back-End para vaga de estágio da SoluCX",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon api/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfiorito/teste-solucx.git"
+  },
+  "author": "Nathan Fiorito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfiorito/teste-solucx/issues"
+  },
+  "homepage": "https://github.com/nfiorito/teste-solucx#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "sequelize": "^6.5.0",
+    "sqlite3": "^5.0.2"
+  }
+}

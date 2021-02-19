@@ -1,0 +1,9 @@
+{
+    "db": {
+        "dialect": "sqlite",
+        "storage": "C:/sqlite/SQLiteStudio/db_SQLite"
+    },
+    "api": {
+        "port": 3000
+    }
+}
