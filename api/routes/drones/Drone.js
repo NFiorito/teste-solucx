@@ -86,23 +86,30 @@ class Drones {
     }
 
     validate(){
-        const fields = [
+        const stringFields = [
             'customer_image',
             'customer_name',
             'customer_address',
+            'status'
+        ]
+
+        const intFields = [
             'battery',
             'max_speed',
             'average_speed',
-            'status',
-            'current_fly',
-            'createdAt',
-            'updatedAt'
+            'current_fly'
         ]
 
-        fields.forEach((field) => {
+        stringFields.forEach((field) => {
             const value = this[field];
 
             if(typeof value !== 'string' || value.length < 0) throw new InvalidField(field)
+        })
+
+        intFields.forEach((field) => {
+            const value = this[field];
+            console.log(typeof value)
+            if(typeof value !== 'number' || value.length < 0) throw new InvalidField(field)
         })
     }
 }
