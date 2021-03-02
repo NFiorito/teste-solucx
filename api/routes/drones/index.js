@@ -19,7 +19,6 @@ router.get('/drones', async (request, response) => {
     //Caso haja queries para ordenação irá executar essa método
     else if(sortBy && order){
         const results = await TabelaDrone.sort(sortBy, order)
-        console.log('sort')
         response.status(200);
         response.send(JSON.stringify(results));
     }
